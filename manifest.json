@@ -2,9 +2,15 @@
   "name": "Bus Ticket QR Scanner",
   "short_name": "QR Scanner",
   "start_url": "index.html",
+  "scope": "/",
+  "id": "/index.html",
   "display": "standalone",
-  "background_color": "#f0f0f0",
+  "orientation": "portrait",
+  "dir": "ltr",
+  "lang": "en",
+  "background_color": "#ffffff",
   "theme_color": "#1976d2",
+  "description": "Scan bus ticket QR codes and validate them with Google Sheets.",
   "icons": [
     {
       "src": "icon-192.png",
@@ -16,5 +22,8 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "launch_handler": {
+    "client_mode": "navigate-new"
+  }
 }
